@@ -1,0 +1,128 @@
+body{
+    background: cadetblue;
+}
+
+@font-face{
+    font-family: kapizza;
+    src: url(../fuentes/kapizza.ttf);
+}
+
+h1{
+    font-family: kapizza;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle; /* NUEVA */
+}
+
+
+
+div#contenido{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(../imagenes/pizzaplanetab.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section{
+    
+    overflow: hidden;
+}
+
+
+
+
+
+section#sec1{
+    text-align: center;
+}
+
+section#sec2{
+    overflow: hidden;
+}
+
+section.secPizza article{
+    float: left;
+    width: 28%;
+   min-width: 200px;
+    min-height: 275px;
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    margin: 13px;
+    padding: 10px;
+    
+}
+
+
+section.secPizza article div{
+    float: left;
+   
+    margin: 10px;
+}
+
+section.secPizza article h2{
+     text-align: center;
+     font-family: kapizza;
+    margin: 5px;
+    font-size: 35px;
+    
+    
+}
+section#sec1 article input#express{
+    margin-left: 10%;
+}
+
+section#sec2 article#art1 {
+    overflow: hidden;
+}
+
+section#sec2 article#art1 div{
+    float: left;
+    //width: 15%;
+    //vertical-align: middle;
+}
+
+
+
+article{
+    
+}
+section article{
+    border-width: 4px;
+    border-color: grey;
+    border-style: solid;
+   
+    
+}
+section article#art1{
+    border-color: red;
+}
+
+section article#art2{
+    border-color: yellow;
+}
+section article#art3{
+    border-color: blue;
+}
+
+section article#art4{
+    border-color: orange;
+}
+
+section article#art5{
+    border-color: purple;
+}
+
+section article#art6{
+    border-color: green;
+}

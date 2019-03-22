@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="estilo/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body onclick="precio()">
+        <header>
+            <h1>
+                <img src="imagenes/pizzaplaneta.png" alt=""/>Pizza Planet
+            </h1>
+        </header>
+        <div id="contenido">
+            <form id="formPizza">
+                <section id="sec1">
+                    <article>
+                        <label>Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" min="0" value="1">
+                        <input type="checkbox" id="express" name="express" value="900">
+                        <label>Express</label>
+                    </article>
+                </section>
+                <section class="secPizza" id="sec2">
+                    <article id="art1">
+                        <h2>Tamaño</h2>
+                        <div class="part1">
+                            <img src="imagenes/pizza.jpg" id="imgPizza" alt="pizzaOriginal" />
+                        </div>
+                        <div class="part2">
+                            <input type="radio" name="tam" id="tam1" checked="checked" value="1" onclick="cambia_tamanyo(1);"/>
+                            <label>Grande</label><br/>
+                            <input type="radio" name="tam" id="tam2" value="0.50" onclick="cambia_tamanyo(2);"/>
+                            <label>Mediana</label><br/>
+                            <input type="radio" name="tam" id="tam3" value="0.25" onclick="cambia_tamanyo(3);"/>
+                            <label>Pequeña</label><br/>
+                        </div>
+                    </article>
+                    <article id="art2">
+                        <h2>Ingredientes</h2>
+                        <div class="part1">
+                            <input type="checkbox" id="queso" name="queso" value="0" onclick="activa('queso')"/>
+                            <label>Queso</label>
+                            <br/><br/><br/>
+                            <input type="checkbox" id="salsa" name="salsa" value="0" onclick="activa('salsa')"/>
+                            <label>Salsa</label>
+                        </div>
+                        <div class="part2">
+                            <select id="quesos" name="quesos" disabled="disabled" > 
+                                <option value="400" >Normal</option>
+                                <option value="600">Light</option>
+                                <option value="700">Extra</option>
+                            </select>
+                            <br/><br/><br/>
+                            <select id="salsas" name="salsas" disabled="disabled"   >
+                                <option value="200">Normal</option>
+                                <option value="350">Light</option>
+                                <option value="350">Extra</option>
+                            </select>
+                        </div>
+                    </article>
+                    <article id="art3">
+                        <h2>Otros</h2>
+                        <div>
+                            <input type="checkbox" id="otro1" name="otro1" value="100"/>
+                            <label>Pimiento</label><br/>
+                            <input type="checkbox" id="otro2" name="otro2" value="150"/>
+                            <label>Jalapeños</label><br/>
+                            <input type="checkbox" id="otro3" name="otro3" value="300"/>
+                            <label>Champiñones</label><br/>
+                            <input type="checkbox" id="otro4" name="otro4" value="200"/>
+                            <label>Piña</label><br/>
+                            <input type="checkbox" id="otro5" name="otro5" value="150"/>
+                            <label>Cebolla</label><br/>
+                            <input type="checkbox" id="otro6" name="otro6" value="175"/>
+                            <label>Aceitunas</label><br/>
+                        </div>
+                    </article>
+                </section>
+                <section class="secPizza" id="sec3">
+                    <article id="art4">
+                        <h2>Tipo de masa</h2>
+                        <div>
+                            <input type="radio" id="tipo1"  checked="checked"  name="tipo" value="700" onclick="cambiamasa(4);"/>
+                            <label>Original</label><br/>
+                            <input type="radio" id="tipo2" name="tipo" value="900" onclick="cambiamasa(1);"/>
+                            <label>Crunchy</label><br/>
+                            <input type="radio" id="tipo3" name="tipo" value="1000" onclick="cambiamasa(3);"/>
+                            <label>Double Decker</label><br/>
+                            <input type="radio" id="tipo4" name="tipo" value="800" onclick="cambiamasa(2);"/>
+                            <label>D4</label><br/>
+                        </div>
+                    </article>
+                    <article id="art5">
+                        <h2>Carnes</h2>
+                        <div>
+                            <input type="checkbox" id="carne1" name="carne1" value="300">
+                            <label>Molida</label><br/>
+                            <input type="checkbox" id="carne2" name="carne2" value="300">
+                            <label>Jamón</label><br/>
+                            <input type="checkbox" id="carne3" name="carne3" value="300">
+                            <label>Chorizo</label><br/>
+                            <input type="checkbox" id="carne4" name="carne4" value="400">
+                            <label>Peperoni</label><br/>
+                            <input type="checkbox" id="carne5" name="carne5" value="500">
+                            <label>Salchicha Italiana</label><br/>
+                            <input type="checkbox" id="carne6" name="carne5" value="500">
+                            <label>Tocino</label><br/>
+                            <input type="checkbox" id="carne7" name="carne5" value="500">
+                            <label>Pollo</label><br/>
+                        </div>
+                    </article>
+                    <article id="art6">
+                        <h2>Total por pagar</h2>
+                        <div>
+                            <label>Precio</label><br/>
+                            <label>I.V</label><br/>
+                            <label>Express</label><br/>
+                            <label>Total</label><br/>
+                        </div>
+                        <div>
+                            <input type="text" readonly="readonly" id="precio" name="precio"/><br/>
+                            <input type="text" readonly="readonly" id="impuesto" name="impuesto"/><br/>
+                            <input type="text" readonly="readonly" id="costoexpress" name="costoexpress"/><br/>
+                            <input type="text" readonly="readonly" id="total" name="total"/><br/>
+                        </div>
+                    </article>    
+                </section>
+                
+            </form>
+        </div>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
