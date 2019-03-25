@@ -1,0 +1,34 @@
+html,
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    margin: 3%;
+}
+
+.custom-hover:hover{
+    cursor: pointer;
+}
+
+/* MARGIN STYLE */
+.custom-margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+
+/* PADDING STYLE */
+.custom-padding-0 {
+    padding: 0px !important;
+}
+
+
+/* LIST STYLE */
+.list-group-item{
+    padding: 5px 10px;
+}
+
+.list-group-item:hover{
+    background-color: #ccc;
+    font-weight: bold;
+}

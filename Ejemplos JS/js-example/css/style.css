@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    margin: 10%;
+    text-align: center;
+    padding: 5%;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.custom-btn {
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+.custom-btn-red {
+    background-color: brown;
+    border: 1px solid brown;
+}
+
+.custom-btn:hover {
+    box-shadow: 2px 2px #555;
+}
+
+.custom-hover:hover {
+    cursor: pointer;
+}
+
+.custom-margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+

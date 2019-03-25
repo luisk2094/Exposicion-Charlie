@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" type="image/xl-icon" href="img/favicon.ico">
+
+    <title>Editable canvas example</title>
+  </head>
+  <body>
+
+    <h2>Live output</h2>
+    <canvas id="canvas" width="400" height="250" class="playable-canvas"></canvas>
+    <p>The rectangle is 50px wide and 50px high.</p>
+
+    <h2>Editable code</h2>
+
+    <p class="a11y-label">Press Esc to move focus away from the code area (Tab inserts a tab character).</p>
+    
+    <textarea id="code" class="playable-code" style="height: 150px;width: 95%">
+        var x = 50; var y = 50;
+        // Edit the two lines below here ONLY
+        x = 50;
+        y = 50;
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, x, y);
+    </textarea>
+
+    <div class="playable-buttons">
+        <input id="reset" type="button" value="Reset" />
+    </div>
+
+    <script src="js/javascript.js"></script>
+
+  </body>
+
+</html>
